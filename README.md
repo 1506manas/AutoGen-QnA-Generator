@@ -1,14 +1,14 @@
 # AutoGen Question-Answer Generation Agent (POC)
 
 A small proof-of-concept that uses **AutoGen** + **OpenAI** to generate
-questions and detailed answers on a topic, then verifies each reference
-URL with a Python tool before returning it.
+questions and detailed answers on a topic, then search and verifies each reference
+URL related to each of the questions using a Python tool before returning it.
 
 ## What it does
 
 Given:
 ```json
-{ "topic": "Agentic AI", "complexity": "Advanced", "question_count": 5 }
+{ "topic": "Agentic AI", "complexity": "Intermediate", "question_count": 3 }
 ```
 
 It produces, for each question:
@@ -29,28 +29,37 @@ It produces, for each question:
 
 ## Setup
 
-1. **Install Python packages**
+1. **Create a Virtual Environment**
+   ```bash
+   python -m venv <venv-name>
+   ```
+
+2. **Initialize the Virtual Environment**
+   ```bash
+   <venv-name>\Scripts\activate
+   ```
+
+3. **Install Python packages**
    ```bash
    pip install -r requirements.txt
    ```
 
-2. **Add your OpenAI API key**
+4. **Add your OpenAI & TAVILY API key**
    Copy `.env.example` to `.env` and fill in your key:
    ```bash
    cp .env.example .env
    # then edit .env and set OPENAI_API_KEY and TAVILY_API_KEY
    ```
 
-3. **Run it**
+5. **Run it**
    ```bash
    python agent.py
    ```
    This runs the sample input already in the script (`Agentic AI`,
-   `Intermediate`, 3) and writes the result to `output.json`, also
-   printing it to the console.
+   `Intermediate`, 3) and you will see the final response of agent in the console.
 
-4. **To use your own input**, edit the `sample_input` dictionary at the
-   bottom of `agent.py`.
+6. **To use your own input**, edit the `sample_input` dictionary at the
+   bottom of `agent.py` in the main().
 
 ## Architecture (brief)
 
@@ -96,3 +105,4 @@ There is one AutoGen agent and one shared Python tool:
   content of the webpage from Tavily.
 - I am using `gpt-4o-mini` model for this agent and for verification of URLs.
 - In a single tool integration, we are solving 2 problems. (URL search, Again Search if fail, Verify Relevance of the URL with Question)
+- We can build a backend using FastAPI for a better approach. 
