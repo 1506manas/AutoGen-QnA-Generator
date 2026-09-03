@@ -1,0 +1,21 @@
+sample_input = {
+    "topic": "Agentic AI",
+    "complexity": "Intermediate",
+    "question_count": 3,
+}
+
+--------------------------------------------------
+
+Sample Output :- 
+
+Question: What is agentic AI and how does it differ from traditional AI models?
+Answer: Agentic AI refers to artificial intelligence systems capable of processing information and operating autonomously to achieve specified goals. Unlike traditional AI, which typically follows predefined rules and requires user input for decision-making, agentic AI actively plans, adapts, and acts without human intervention to solve complex and multi-step tasks. Traditional AI models often handle specific tasks effectively but struggle with generalization and adapting to new situations. In contrast, agentic AI can learn from its interactions and adjust its behavior over time, allowing it to handle more dynamic and unfamiliar scenarios. Furthermore, agentic AI systems can collaborate across different areas to solve complex problems, unlike traditional AI which may operate in isolation within specific domains.
+Reference: https://www.fullstack.com/labs/resources/blog/agentic-ai-vs-traditional-ai-what-sets-ai-agents-apart
+--------------------------------------------------
+Question: How can agentic AI systems be beneficial in real-world applications?
+Answer: Agentic AI systems hold the potential to revolutionize many real-world applications by enhancing automation, efficiency, and effectiveness in various sectors. These systems can take on tasks such as proactive supply chain adjustments in response to economic changes, autonomous management of customer service inquiries, and complex decision-making processes in financial services without the need for constant human oversight. By doing so, they can significantly reduce operational costs, improve service delivery, and provide businesses with the agility to respond rapidly to market changes. Although a specific reference URL for this content was not verified, these applications are consistent with general insights about the evolving role of agentic AI in enhancing operational efficiency across industries.
+Reference: https://www.exabeam.com/explainers/ai-cyber-security/agentic-ai-how-it-works-and-7-real-world-use-cases
+--------------------------------------------------
+Question: What are some potential challenges and risks associated with the development of agentic AI?
+Answer: The development of agentic AI systems brings several challenges and risks, including issues related to identity sprawl, tool misuse, biased feedback, and lack of transparency in decision-making processes. Agentic AI systems increase the number of digital identities and service accounts, which can lead to security risks if not properly managed. They may interact with different tools and APIs, raising the potential for data breaches or unintended actions. Additionally, feedback-loop vulnerabilities could reinforce biases if not monitored carefully. The complexity of these systems also complicates observability and accountability, making it crucial to establish strong governance and ethical guidelines to manage these risks effectively.
+Reference: https://domino.ai/blog/agentic-ai-risks-and-challenges-enterprises-must-tackle

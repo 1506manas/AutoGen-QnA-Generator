@@ -1,0 +1,7 @@
+autogen-agentchat
+autogen-ext[openai]
+openai
+pydantic
+requests
+tavily-python
+python-dotenv
